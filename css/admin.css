@@ -1,0 +1,307 @@
+/*
+	Colors:
+	#f17300 - Tennessee Orange
+	#dbe4ee - Azureish White
+	#81a4cd - Dark Pastel Blue
+	#3e7cb1 - Steel Blue
+	#054a91 - Medium Electric Blue
+
+	Fonts:
+	Heading: 'Enriqueta', serif;
+	Text:  'Ubuntu', sans-serif;
+ */
+
+/*===========================================================================================
+	DEFAULTS
+===========================================================================================*/
+header,
+section,
+footer {
+	width: 100%;
+	float: left;
+}
+.admin-header,
+.admin-footer {
+	background: #f17300;
+	color: #dbe4ee;
+}
+main {
+	width: 100%;
+	float: left;
+	padding: 1em 0;
+	background: #dbe4ee;
+	color: #054a91;
+	min-height: 600px;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/*===========================================================================================
+	TYPOGRAPHY
+===========================================================================================*/
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+body * {
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Enriqueta', serif;
+	margin: 0 0 1em;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.6em;
+}
+h4 {
+	font-size: 1.4em;
+}
+h5 {
+	font-size: 1.2em;
+}
+h6 {
+	font-size: 1em;
+}
+p {
+	margin: 0 0 0.4em;
+}
+/*===========================================================================================
+	DEFAULT FORM
+===========================================================================================*/
+form input,
+form textarea,
+form select {
+	-webkit-appearance: none;
+	width: 100%;
+	font: 1em/1 'Ubuntu', sans-serif;
+	padding: 0.3em;
+	box-sizing: border-box;
+	box-shadow: inset 0px 0px 3px #dddddd;
+}
+form button,
+form input[type=submit],
+.button {
+	display: inline-block;
+	background: #f17300;
+	color: #FFFFFF;
+	border: 1px solid #f17000;
+	padding: 1em;
+	font-weight: bold;
+	font-size: 1.2em;
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+form button:hover,
+form input[type=submit]:hover,
+form .button:hover {
+	background: #ff7b00;
+}
+form input:focus,
+form textarea:focus,
+form select:focus {
+	box-shadow: inset 4px 4px 10px #000;
+}
+form .field {
+	width: 100%;
+	margin: 1em 0 0;
+}
+form .field:first-child {
+	margin: 0;
+}
+form .field label {
+	display: block;
+	text-align: left;
+	font-size: 0.9em;
+	margin: 0 0 0.4em;
+}
+form .buttons {
+	margin: 1em 0 0;
+}
+form .buttons-set .button {
+	float: left;
+	width: calc(50% - 0.5em);
+	margin: 0 0 0 1em;
+}
+form .buttons-set .button:first-child,
+form .buttons-set .button:nth-child( 2n + 3 ) {
+	margin: 0;
+}
+/*===========================================================================================
+	DEFAULT TABLE
+===========================================================================================*/
+table {
+	width: 100%;
+	float: left;
+	border: 1px solid #81a4cd;
+}
+table tr {
+	border-top: 1px solid #81a4cd;
+	border-bottom: 1px solid #81a4cd;
+}
+table th,
+table td {
+	border-left: 1px solid #81a4cd;
+	padding: 5px 10px;
+}
+table th:first-child,
+table td:first-child {
+	border-left: none;
+}
+/*===========================================================================================
+	HEADER
+===========================================================================================*/
+header {
+	padding: 1em;
+}
+header .logged-in {
+	float: right;
+}
+header nav {
+	float: left;
+}
+header nav ul {
+	margin: 0;
+}
+header nav ul li {
+	float: left;
+	list-style: none outside none;
+	margin: 0 0 0 1em;
+}
+header nav ul li:first-child {
+	margin: 0;
+}
+header nav ul li a {
+	text-decoration: none;
+	font: bold 1em/1 'Enriqueta', serif;
+	color: #FFFFFF;
+}
+/*===========================================================================================
+	HOMEPAGE
+===========================================================================================*/
+main.homepage {
+	padding: 0;
+}
+/*===========================================================================================
+	BANNER
+===========================================================================================*/
+.home-banner,
+.home-banner .slide {
+	width: 100%;
+	float: left;
+}
+.home-banner .slide .image img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+.home-banner .slide .image .tablet {
+	display: none;
+}
+.home-banner .slide .image .desktop {
+	display: none;
+}
+.home-banner .slide .content {
+	padding: 1em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+@media ( min-width: 640px ) {
+	.home-banner .slide .image .mobile {
+		display: none;
+	}
+	.home-banner .slide .image .tablet {
+		display: block;
+	}
+}
+@media ( min-width: 900px ) {
+	.home-banner .slide .image .tablet {
+		display: none;
+	}
+	.home-banner .slide .image .desktop {
+		display: block;
+	}
+}
+/*===========================================================================================
+	INTRO
+===========================================================================================*/
+.intro {
+	padding: 1em 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	width: 100%;
+	min-height: 300px;
+}
+/*===========================================================================================
+	ARTICLES
+===========================================================================================*/
+.articles {
+	width: 100%;
+	float: left;
+	padding: 1em 3em;
+	background: #054a91;
+	color: #dbe4ee;
+}
+.articles .article-list {
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+}
+.articles a {
+	color: #dbe4ee;
+}
+.articles .item {
+
+}
+.articles .item header,
+.articles .item section,
+.articles .item footer {
+	padding: 1em;
+}
+.articles .article-footer {
+	text-align: right;
+}
+/*===========================================================================================
+	LOGIN FORM
+===========================================================================================*/
+.login-form {
+	max-width: 500px;
+	width: 100%;
+	overflow: auto;
+	margin: 5em auto;
+	text-align: center;
+	border: 1px solid #81a4cd;
+	background: #81a4cd;
+	padding: 1em;
+}
+.login-form .buttons {
+	width: 100%;
+	float: left;
+}
+/*===========================================================================================
+	FOOTER
+===========================================================================================*/
+footer {
+	padding: 1em 0;
+	width: 100%;
+	float: left;
+}

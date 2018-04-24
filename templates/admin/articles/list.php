@@ -2,6 +2,7 @@
 	/*
 	CMS Admin - List Article Template
 	 */
+	/*
 	Admin::get_admin_header();
 	$articles = Article::getList();
 	$count = count( $articles );
@@ -33,4 +34,5 @@
 </main>
 <?php
 	Admin::get_admin_footer();
+	*/
 ?>

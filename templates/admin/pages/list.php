@@ -2,6 +2,7 @@
 	/*
 	CMS Admin - List Pages Template
 	 */
+	/*
 	Page::get_admin_header();
 	$pages = Page::getList();
 	$count = count( $pages );
@@ -33,4 +34,5 @@
 </main>
 <?php
 	Page::get_admin_footer();
+	*/
 ?>
